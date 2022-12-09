@@ -1,11 +1,11 @@
-const modal = document.querySelector("#modal");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querrySelector(".close-button");
+// creating function for show modal and closing modal
 
-openModal.addEventListener("click", () => {
-  modal.showModal();
+const overlay = document.querySelector("#overlay");
+
+document.querySelector("#show-modal-btn").addEventListener("click", () => {
+  overlay.style.display = "block";
 });
 
-closeModal.addEventListener("click", () => {
-  modal.closest();
+document.querySelector("#close-modal-btn").addEventListener("click", () => {
+  overlay.style.display = "none";
 });
