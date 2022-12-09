@@ -1,11 +1,10 @@
-// creating function for show modal and closing modal
+const modal = document.querySelector(".overlay");
 
-const overlay = document.querySelector("#overlay");
-
-document.querySelector("#show-modal-btn").addEventListener("click", () => {
-  overlay.style.display = "block";
-});
+setTimeout(function () {
+  modal.classList.add("show-modal");
+}, 1000);
 
 document.querySelector("#close-modal-btn").addEventListener("click", () => {
-  overlay.style.display = "none";
+  modal.classList.remove("show-modal");
+  modal.classList.add("hide-modal");
 });
