@@ -22,3 +22,8 @@ a {
 h5 {
   font-size: 18px;
 }
+
+.first-picture {
+  border-radius: 8px;
+  background-color: white;
+}
